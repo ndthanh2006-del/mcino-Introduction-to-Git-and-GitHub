@@ -1,0 +1,11 @@
+Command:
+git branch -a -vv
+
+Output:
+  bug-fix-typo                04d9813 Fix typo in README
+* main                        34971a0 [origin/main] Add pull request verification evidence
+  remotes/origin/HEAD         -> origin/main
+  remotes/origin/bug-fix-typo 04d9813 Fix typo in README
+  remotes/origin/main         34971a0 Add pull request verification evidence
+  remotes/upstream/HEAD       -> upstream/main
+  remotes/upstream/main       ad95b0a Create close_pr.yml
