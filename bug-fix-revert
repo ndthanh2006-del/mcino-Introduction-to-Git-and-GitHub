@@ -1,0 +1,11 @@
+Command:
+curl.exe -s -H "Authorization: Bearer $(gh auth token)" https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/13894 | ConvertFrom-Json | Format-List html_url,state,number,@{Name='head_repository';Expression={$_.head.repo.full_name}},@{Name='head_branch';Expression={$_.head.ref}},@{Name='base_repository';Expression={$_.base.repo.full_name}},@{Name='base_branch';Expression={$_.base.ref}}
+
+Output:
+html_url        : https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/13894
+state           : closed
+number          : 13894
+head_repository : ndthanh2006-del/mcino-Introduction-to-Git-and-GitHub
+head_branch     : bug-fix-typo
+base_repository : ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+base_branch     : main
